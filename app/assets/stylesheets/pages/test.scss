@@ -1,0 +1,23 @@
+// Search bar
+.search-bar-container {
+  border-radius: 25px;
+ box-shadow: 1px 1px 14px 	#ffffff;
+}
+
+// input field
+.container-main-search-block .search-form-base input[type="text"] {
+   background-color: #e7e7e7;
+   border: none;
+   border-radius: 25px;
+   font-size: large;
+   transition: font-size 0.1s ease-in-out;
+}
+
+/* Hover effect for the input field text */
+.container-main-search-block .search-form-base input[type="text"]:hover {
+   font-size: larger;
+}
+
+.submit-icon-enabled .search-icon-wrapper {
+   border-radius: 25px;
+}

@@ -1,1 +1,443 @@
-// Specific CSS for your home-page
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* ============================= LOGIN ============================= */
+.reveal {
+  background-color: #A7A9AC;
+}
+/* ============================= GLOBAL ============================= */
+/*
+a {
+
+}
+a:hover {
+  color: #7CAC46!important;
+}
+a:visited {
+  /*color: #7CAC46;* /
+}
+*/
+/* ============================= TODO  ============================= */
+
+
+/* ============================= HEADER ============================= */
+.font-resizer {
+  background: white;
+}
+
+.gTranslate select {
+color: #252c6a !important;
+}
+
+#logo img{
+  max-width: 100% !important;
+  max-height: 26vh !important;
+}
+
+/* Site name and slogan */
+#header #name-and-slogan #site-name {
+  display: flex !important;
+  font-size: 6vh !important;
+  line-height: 2 !important;
+  flex-wrap: wrap !important;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  #header #name-and-slogan #site-name {
+    font-size: 4vh !important;
+    line-height: 1.3 !important;
+  }
+}
+
+/* Tablet screens */
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  #header #name-and-slogan #site-name {
+    font-size: 3.5vh !important;
+    line-height: 1.4 !important;
+  }
+  #logo img {
+    max-width: 89% !important;
+    max-height: 15vh;
+}
+}
+
+/* Mobile phones */
+@media only screen and (max-width: 767px) {
+  #header #name-and-slogan #site-name {
+    font-size: 4vh !important;
+    line-height: 1.3 !important;
+  }
+}
+
+/* ============================= SEARCH BAR ============================= */
+
+#header .section {
+  width: 99%;
+  padding: 0 !important
+}
+
+
+#header #search {
+  margin-bottom: -30px;
+}
+
+#search .block-hf-stacks-search .content {
+  overflow: hidden;
+  border: none;
+  border-radius: 20px;
+  background-color: #e7e7e7;
+  padding: 0;
+  box-shadow: 1px 1px 14px#e7e7e7;
+}
+
+#searchBox {
+  box-shadow: none;
+  background-color: #e7e7e7;
+  border: none;
+  border-radius: 25px;
+  font-size: large;
+  transition: font-size 0.1s ease-in-out;
+}
+
+#searchBox::placeholder {
+  color: #0071ce;
+}
+
+#searchBox.text {
+  color: #0071ce;
+}
+
+#searchBox:hover {
+  font-size: larger;
+}
+
+#selectSearchCatalog {
+  border: none;
+  background-color: #e7e7e7;
+  box-shadow: none;
+  color: #252c6a;
+}
+
+.searchSubmitButton .button {
+  border-bottom: none;
+  background-color: #0071ce !important;
+  color: white !important;
+}
+.searchSubmitButton .button:hover {
+  background-color: #00adef !important;
+}
+
+/* ============================= MAIN MENU DROPDOWN ============================= */
+
+
+// stop test
+#header .main-nav {
+  background-color: #252c6a !important;
+}
+
+.main-nav .menu-block-wrapper > ul > li.expanded {
+  background-color: #252c6a !important;
+}
+
+.main-nav .menu-block-wrapper > ul > li.expanded > ul > li > a {
+  background-color: #252c6a;
+}
+
+#header .main-nav .menu-block-wrapper>ul>li.expanded>ul li a {
+  color:white !important;
+}
+
+/* Parent menu */
+#header .main-nav .menu-block-wrapper > ul > li > .nolink:before {
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: #ffb71b !important;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  margin-bottom: 5px;
+}
+
+/* Style for non-link items on hover */
+#header .main-nav .menu-block-wrapper > ul > li:hover > .nolink {
+  color: #ffb71b !important;
+  background-color: #252c6a;
+}
+/* Expand animated bar on hover */
+#header .main-nav .menu-block-wrapper > ul > li:hover > .nolink:before {
+  width: 30%;
+  opacity: 1;
+}
+
+#header .main-nav .menu-block-wrapper>ul>li.expanded>ul a:hover {
+  color: #00adef !important;
+}
+
+#header .main-nav .menu-block-wrapper>ul>li.expanded>ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 2.6rem;
+  width: auto;
+  min-width: 9.38rem;
+  border-radius: 2px;
+  background-color: transparent !important;
+  transition: all .1s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  z-index: 1;
+}
+
+#header .main-nav .menu-block-wrapper>ul>li.expanded>ul a {
+  position: relative;
+  display: inline-block;
+  background-color: #252c6a;
+  border-bottom: 1px solid #00adef;
+}
+
+
+#header .main-nav .menu-block-wrapper>ul>li.expanded>ul a::before {
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: #00adef;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+/* Expand animated bar on hover */
+#header .main-nav .menu-block-wrapper>ul>li.expanded>ul a:hover::before {
+  width: 20%;
+  opacity: 1;
+}
+
+
+
+/* ============================= CONTENT ============================= */
+
+// space the elements!
+// #main .panel-display .p-item {
+//   padding-top: 50px;
+// }
+
+// this is just for demoday remove
+#admin-menu {
+  display: none;
+}
+div#panels-ipe-control-container {
+display: none !important;
+}
+
+.blk-cta-callout .imgHolder img {
+  background-size: cover;
+  height: 350px;
+}
+
+.USICInfo .USICInfo-items {
+  width: 60%;
+  margin-top: -15px !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+// remove above!
+
+.blk-title {
+color: #0071ce !important;
+}
+
+#main {
+  background: #ffffff;
+}
+
+
+#content-wrapper .section-wrapper {
+  padding-top: 20px !important;
+  background: transparent !important;
+}
+
+#main .panel-display .field-content {
+  background: #fff;
+  border: 1px solid white;
+  border-radius: 20px 0;
+  box-shadow: 1px 1px 7px #252c6a;
+}
+
+
+.cta-callout .cta-title {
+
+  text-align: center;
+  border-radius: 15px 0;
+  background: #0071ce;
+}
+
+
+.cta-link {
+  font-size: large;
+  color: white !important;
+}
+
+
+.cta-title .cta-link:hover {
+  color: #252c6a !important; /* Change color on hover */
+}
+
+#content-wrapper .section-wrapper .main-content {
+  padding-top: 0;
+}
+#main .panel-display .p-item {
+  padding-top: 0;
+}
+
+
+.coverflow-slider .inner-content {
+  border: none !important;
+  background:transparent !important;
+}
+
+.views-field.views-field-field-isbn {
+  box-shadow: 2px 2px 14px #252c6a !important;
+}
+
+.views-field.views-field-field-title {
+  color: #0071ce;
+  font-family: 'Montserrat';
+  box-shadow: 1px 1px 7px #252c6a;
+  border-radius: 15px 0;
+  background: white ;
+}
+
+.blk-resource-list .views-field-field-title, .page-node .blk-resource-list .views-field-field-title {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10%;
+  border-top: none !important;
+  padding: 1.9px;
+  opacity: 0;
+  transition: all .15s ease-out;
+}
+
+
+
+.slick-arrow{
+  background-color: #e6e6e7!important;
+  border: none !important;
+  border-radius: 20px !important;
+  box-shadow: 1px 1px 7px #252c6a !important;
+}
+.slick-arrow:hover {
+  opacity: 0.5;
+}
+
+.p-item-custom_block .pane-content {
+  border: none !important;
+  background: white;
+
+}
+
+.crt-post.crt-post-has-image.crt-post-has-text.crt-no-user-image.crt-post-instagram {
+  border: none;
+  border-radius: 15px 0;
+  box-shadow: 1px 1px 7px #252c6a ;
+}
+
+
+.crt-social-icon {
+  display: none !important;
+}
+
+
+.crt-post-fullname{
+  background: #ffb71b;
+  border-radius: 15px 0;
+}
+.crt-post-fullname a{
+  color:#252c6a !important;
+}
+.crt-post .crt-post-header {
+  padding-top: 1px !important;
+  margin: 0 45px !important;
+}
+
+
+.crt-panel-arrow {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease; /* Transition for smooth effect */
+}
+
+.crt-panel-arrow:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+
+.panel-col-bottom {
+  display: none;
+}
+
+
+/* ============================= Footer ============================= */
+body.theme-aurora, #footer {
+  background: #252c6a !important;
+}
+
+
+
+/* ============================= Scroll Top Button ============================= */
+.scroll-top {
+  background-color: #0071ce !important;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  display: none;
+  z-index: 999999;
+}
+
+
+/* ============================= LOGIN ============================= */
+
+.site-wide-enabled body:not(.image-bg-enable).theme-aurora div.main-wrapper {
+  background: #004b93 !important;
+}
+/* ============================= PAGE CONTENT ============================= */
+
+.item-block-title:after {
+  border: 0!important;
+  margin: 0!important;
+}
+.blk-title:after {
+  border: 0!important;
+  margin: 0!important;
+}
+/* ============================= FOOTER ============================= */
+#sub-footer {
+  display: none;
+}
+
+/* ============================= form ============================= */
+#studyroom-availability-search-form .form-submit, #studyroom-availability-search-form .form-reset{
+  color: #3b3b3b!important;
+}
+
+#edit-openid-connect-client-generic-login, #edit-submit--2{
+  color: #3b3b3b!important;
+}
